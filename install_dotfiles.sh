@@ -2,7 +2,6 @@
 
 function install_tmux_dotfiles(){
 	cwd=$(pwd)
-	echo $cwd
 	cp $cwd/tmux/tmux.conf $HOME/
 	mv $HOME/tmux.conf $HOME/.tmux.conf
 	mkdir -p $HOME/.tmux
