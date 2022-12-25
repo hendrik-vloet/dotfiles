@@ -9,4 +9,11 @@ function install_tmux_dotfiles(){
 	chmod +x $HOME/.tmux/left_status.sh
 }
 
+function install_omz(){
+	sh -c "$(wget https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh -O -)"
+	git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
+}
+
+
 install_tmux_dotfiles
+install_omz
