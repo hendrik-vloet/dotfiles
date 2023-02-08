@@ -19,9 +19,6 @@ function install_omz(){
 
 
 install_tmux_dotfiles
-<<<<<<< Updated upstream
 install_omz
-=======
 git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
-
->>>>>>> Stashed changes
+cp zsh/.zprofile $HOME/
