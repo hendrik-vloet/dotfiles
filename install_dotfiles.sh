@@ -8,6 +8,9 @@ function install_tmux_dotfiles(){
 	cp $cwd/tmux/bash-extensions/left_status.sh $HOME/.tmux
 	chmod +x $HOME/.tmux/left_status.sh
 }
+function install_omz(){
+wget https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh -O -
+}
 
 function install_omz(){
 	sh -c "$(wget https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh -O -)"
@@ -16,4 +19,9 @@ function install_omz(){
 
 
 install_tmux_dotfiles
+<<<<<<< Updated upstream
 install_omz
+=======
+git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
+
+>>>>>>> Stashed changes
